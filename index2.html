@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100  items-center justify-center min-h-screen">
+
+  <section>
+    <div class="h-screen flex items-center justify-center">
+        <div class="grid grid-cols-2">
+            <div class=" text-center justify-end">
+                <h3 class="font-bold text-xl text-center">Our Vision</h3>
+                <p>We have a calling and vision to spread to all men the victorious life in christ enabling them to reign in life, this means that we have the vision to .... </p>
+                <a href="#" class="text-center bg-gradient-to-br from-[#D4AF37] to-[#7D3C3C] rounded-md hover:bg-blue-500">Our Philosophy</a>
+            </div>
+            <div>
+                <img src="media/congegation.jpg" alt="" class="rounded-[30px] md:w-90 h-90">
+            </div>
+        </div>
+    </div>
+   </section>
+  <div class="w-full max-w-xl relative overflow-hidden rounded-xl shadow-lg">
+    <!-- Images -->
+    <div class="flex transition-transform duration-500 ease-in-out" id="slider">
+      <img src="media/1.png" class="w-full flex-shrink-0" />
+      <img src="media/2.png" class="w-full flex-shrink-0" />
+      <img src="media/3.png" class="w-full flex-shrink-0" />
+    </div>
+
+    <!-- Buttons -->
+    <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200">
+      ◀
+    </button>
+    <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-200">
+      ▶
+    </button>
+  </div>
+  <div class="relative w-64 h-40 bg-gray-200 group overflow-hidden rounded shadow-lg">
+  <!-- Content (could be text, icon, etc.) -->
+  <div class="p-4">
+    <h2 class="text-lg font-bold">Hover Me</h2>
+  </div>
+
+  <!-- Hidden image that shows on hover -->
+  <img src="your-image.jpg"
+       class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+</div>
+
+
+  <script>
+    const slider = document.getElementById('slider');
+    const slides = slider.querySelectorAll('img');
+    let index = 0;
+
+    document.getElementById('next').onclick = () => {
+      index = (index + 1) % slides.length;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    document.getElementById('prev').onclick = () => {
+      index = (index - 1 + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    };
+  </script>
+
+</body>
+</html>

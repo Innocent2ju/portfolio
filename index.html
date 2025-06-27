@@ -10,7 +10,7 @@
 </head>
 <body class="bg-[#FAF3E0] ">
   <header>
-    <div class="bg-[#2C3E50]">
+    <div class="bg-gray-500 shadow-lg">
         <div class="grid grid-cols-2">
             <div><img src="media/b.jpg" alt="" class="rounded-[50px] h-20 w-20"></div>
             <div class="nav">
@@ -28,9 +28,9 @@
         </div>
     </div>
   </header>
-  <section>
-        <div class="flex justify-center w-full items-center ">
-          <span class="flex justify-start text-mono  font-bold text-center">Welcome To Reigner's Nation where Men are Equipped To live victoriously here on earth</span>
+  <section class="mt-10">
+        <div class="max-w-xl flex justify-center shadow-xl mx-auto justify-center">
+          <span class="text-indigo-700 to-purple-800 max-w-sm items-center text-mono  font-bold text-center text-xl">Welcome To Reigner's Nation where Men are Equipped To live victoriously here on earth</span>
         </div>
   </section>
    <section>
@@ -127,6 +127,14 @@
         const images = slides.querySelectorAll("img");
         const totalSlides = slider.children.length;
         let index = 0;
+         function next(){
+           index = (index + 1) % images.length
+           slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+        function prev(){
+            index = (index - 1 + images.length) % images.length
+             slides.style.transform = `translateX(-${index * 100}%)`;
+        }
         function updateSlide() {
             slider.style.transform = `translateX(-${index * 100}%)`;
         }
@@ -139,14 +147,7 @@
             updateSlide();
         }
 
-        function next(){
-           index = (index + 1) % images.length
-           slides.style.transform = `translateX(-${index * 100}%)`;
-        }
-        function prev(){
-            index = (index - 1 + images.length) % images.length
-             slides.style.transform = `translateX(-${index * 100}%)`;
-        }
+       
 
         setInterval(nextSlide, 4000);
    </script>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#0A0F2C] text-white">
+    <header id="dashboard">
+        <div class="grid grid-cols-2 fixed">
+            <div class="logo"><span class="filter-blur bg-teal-500 rounded-xl shadow-50xl text-center font-bold text-2xl">INNCODE</span></div>
+            <div class="nav">
+                <nav class="flex justify-end text-white">
+                    <ul class="flex" id="dark">
+                        <li class="mx-5 hover:text-blue-500"><a href="#dashboard">Dashboard</a></li>
+                        <li class="mx-5"><a href="#services">Services</a></li>
+                        <li class="mx-5"><a href="#latestproject">Projects</a></li>
+                        <li class="mx-5 "><a href="#about">About</a></li>
+                        <li class="mx-5"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="grid grid-cols-2 h-screen items-center">
+            <div class="flex justify-end text-center flex-wrap">
+                <span class="mx-5">
+                    <h3 class="font-bold text-xl">Hi, I'm Inncode,</h3>
+                    <p class="">a Full-Stack Developer who builds modern, scalable web apps.
+                    I turn complex ideas into smooth digital experiences with clean code and thoughtful design.</p>
+                    <div class="my-3 flex gap-2 items-center justify-center flex-wrap">
+                        <a href="#latestproject" class="px-3 rounded-md p-1.5 bg-gradient-to-br from-[##8174D6] to-indigo-700 hover:bg-blue-500">View My works</a>
+                        <a href="#contact" class="px-3 rounded-md p-1.5 bg-gradient-to-br from-[##8174D6] to-indigo-700 hover:bg-blue-500">Contact me</a>
+                    </div>
+                </span>
+            </div>
+            <div class="max-w-sm">
+                <img src="media/me2.jpg" alt="" class="rounded-full ">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="h-screen grid items-center">
+            <h1 class="text-center font-mono font-extrabold text-5xl text-teal-500">What I  Do</h1>
+            <div class="grid grid-cols-2">
+                <span class="flex justify-center">
+                    <div class="border-1px text-center w-60">
+                        <span class="shadow-xl text-white">Fullstack Web Developer</span>
+                        <p class="shadow-50xl">My passion to solve man problems through tech has been the diving force which actually made me to learn and developing skills in all these programming languages</p>
+                    </div>
+                </span>
+                <span class="justify-end items-end">
+                    <p><span class="TT">Frontend:</span> CSS, Html, Javascript etc. <br>
+
+                        <span class="TT">Backend: </span>PHP, Python etc. <br>
+
+                        <span class="TT">Techstack:</span> ReactJs, NextJs
+                    </p>
+                </span>
+            </div>
+            <div class="text-center text-[#2f2d38] font-bold">
+                <p class="text-[#EDEEF6]"> I do more than write code- I solve business problems, priorities user experience and optimize performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="latestproject" class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-10 flex-shrink-0">My Projects</h2>
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+                    <img src="media/Screenshot.png" alt="">
+                    <h3 class="text-xl font-semibold mb-2">A church Weebsite</h3>
+                    <p class="text-sm">Equipping the next generation to lead in purpose and purity.</p>
+                </div>
+                <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+                    <img src="media/church/2.jpg" alt="">
+                    <h3 class="text-xl font-semibold mb-2">Worship Team</h3>
+                    <p class="text-sm">Leading hearts into God’s presence through powerful worship.</p>
+            </div>
+             <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+                    <img src="media/church/2.jpg" alt="">
+                    <h3 class="text-xl font-semibold mb-2">Worship Team</h3>
+                    <p class="text-sm text-black">Leading hearts into God’s presence through powerful worship.</p>
+            </div>
+      </div>
+    </section>
+    <section class="About grid h-100 items-center" id="about">
+        <h1 class="text-center uppercase font-bold text-xl text-teal-500">About Me</h1>
+        <div class="flex justify-center">
+            <div class="grid grid-cols-2 items-center">
+                <span class="flex justify-end">
+                    <img src="media/me.jpg" alt="" class="w-40 rounded-full md:w-60 ">
+                </span>
+                <div class="text-left mx-5 shadow-xl">
+                    <p class="text-center">“My passion for solving real human problems through technology has been the driving force behind my journey into web development. Today, I build clean, high-performance web applications and I’m committed to pushing boundaries till I satisfy most of the needs of man which my niche can achieve”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3 class="capitalize text-center text-2xl text-teal-500">Let's build something great together</h3>
+        <div class="flex gap-4 h-70 items-center">
+            <div class="flex flex-col">
+                <span class="underline">Name : Okwor Innocent Chidera</span>
+                <span>email:  innocent123chidera@gmail.com</span> <a href="mailto:innocent123chidera@gmail.com" class="w-30 rounded-full p-1.5 bg-gradient-to-br from-[##8174D6] to-indigo-700 hover:bg-blue-500">Send Email</a>
+                <span class="my-5">Mobile number: +234 704 517 2801</span>
+            </div>
+            <div class="flex flex-col mx-10">
+                <span>Linked In:linkedin.com/in/innocent-okwor-b5937b36a</span>
+                <span>Github:  </span>
+                
+            </div> 
+    </section>
+    <section class="bg-[#2F2D38]">
+        <h3 class="text-center">Blog</h3>
+        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia architecto perferendis natus?</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reigners Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .bg-hero {
+      background-image: url('https://images.unsplash.com/photo-1607892029829-71f1cb4d77d2?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Hero -->
+  <section class="bg-hero h-screen flex items-center justify-center relative text-white">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 animate-fade-in">Welcome to <span class="text-yellow-400">Reigners Church</span></h1>
+      <p class="text-xl md:text-2xl mb-6 max-w-xl mx-auto">Raising Kings. Reigning on Earth. Serving with Purpose.</p>
+      <a href="#about" class="px-6 py-3 bg-yellow-400 text-black rounded-full font-semibold shadow-lg hover:bg-yellow-300 transition">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+    <p class="max-w-2xl mx-auto text-lg">
+      We are a vibrant, spirit-led church passionate about transforming lives, communities, and nations. Our mission is to raise kings who reign in all spheres of life through faith, purpose, and love.
+    </p>
+  </section>
+
+  <!-- Service Times -->
+  <section class="py-16 bg-gradient-to-br from-indigo-700 to-purple-800 text-white text-center">
+    <h2 class="text-3xl font-bold mb-6">Service Schedule</h2>
+    <div class="space-y-4 text-lg">
+      <p><strong>Sunday Celebration:</strong> 9:00 AM</p>
+      <p><strong>Midweek Recharge (Wed):</strong> 6:00 PM</p>
+      <p><strong>Friday Fire Hour:</strong> 5:30 PM</p>
+    </div>
+  </section>
+
+  <!-- Ministries -->
+  <section class="py-16 px-6 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Ministries</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+        <h3 class="text-xl font-semibold mb-2">Youth & Teens</h3>
+        <p class="text-sm">Equipping the next generation to lead in purpose and purity.</p>
+      </div>
+      <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+        <h3 class="text-xl font-semibold mb-2">Worship Team</h3>
+        <p class="text-sm">Leading hearts into God’s presence through powerful worship.</p>
+      </div>
+      <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+        <h3 class="text-xl font-semibold mb-2">Evangelism Squad</h3>
+        <p class="text-sm">Carrying the gospel into streets, souls, and digital spaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-16 bg-indigo-800 text-white text-center">
+    <h2 class="text-3xl font-bold mb-6">Connect With Us</h2>
+    <p class="mb-2">📍 123 Spirit Lane, City of Grace</p>
+    <p class="mb-2">📧 reignerschurch@gmail.com</p>
+    <p class="mb-6">📞 +234 000 000 0000</p>
+    <a href="mailto:reignerschurch@gmail.com" class="inline-block px-6 py-3 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-300 transition">Send Email</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-sm text-center py-4">
+    © 2025 Reigners Church. Built with faith ✝️ and Tailwind CSS.
+  </footer>
+
+  <section class="py-16 bg-gray-100 text-center">
+  <h2 class="text-3xl font-bold mb-8">Church Highlights</h2>
+
+  <div class="relative max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg">
+    <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+      <img src="https://source.unsplash.com/800x400/?church,worship" class="w-full flex-shrink-0" />
+      <img src="https://source.unsplash.com/800x400/?praise,faith" class="w-full flex-shrink-0" />
+      <img src="https://source.unsplash.com/800x400/?choir,service" class="w-full flex-shrink-0" />
+    </div>
+
+    <!-- Optional Arrows -->
+    <button onclick="prevSlide()" class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 px-3 py-1 rounded-full shadow text-xl">⟨</button>
+    <button onclick="nextSlide()" class="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 px-3 py-1 rounded-full shadow text-xl">⟩</button>
+  </div>
+</section>
+
+<script>
+  const slider = document.getElementById("slider");
+  const totalSlides = slider.children.length;
+  let index = 0;
+
+  function updateSlide() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateSlide();
+  }
+
+  // 🔁 Auto-slide every 4 seconds
+  setInterval(nextSlide, 4000);
+</script>
+
+</body>
+</html>
+
+<h2 class="text-center font-bold">Sermons</h2>
+            <p class="text-center italic"> "mattew 3:3 Deliverance can be preached"
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur maiores facilis animi?
+        </p>
+
+
+         <div class="justify-center items-center">
+            <h3>Listen to Our Messages Across </h3>
+            <div class="grid grid-cols-3 md:flex gap-2">
+                <a href="#" class="md:relative top-5"><img src="media/church/1.jpg" alt="" class="w-90 h-90"></a>
+            </div>
+        </div>

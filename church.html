@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="media/e.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/reigner.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reigner's Nation</title>
+</head>
+<body class="bg-[#FAF3E0] ">
+  <header>
+    <div class="bg-[#0A0F2C] shadow-lg">
+        <div class="grid grid-cols-2">
+            <div><img src="media/b.jpg" alt="" class="rounded-[50px] h-10 w-10"></div>
+            <div class="nav">
+                <nav class="flex justify-end text-white">
+                    <ul class="flex " id="dark">
+                        <li class="mx-5 hover:text-[#D4AF37]"><a href="#dashboard">Home</a></li>
+                        <li class="mx-5 hover:text-[#D4AF37]"><a href="#services">About</a></li>
+                        <li class="mx-5 hover:text-[#D4AF37]"><a href="#latestproject">Sermons</a></li>
+                        <li class="mx-5 hover:text-[#D4AF37]"><a href="#about">Visit</a></li>
+                        <li class="mx-5 hover:text-[#D4AF37]"><a href="#contact">Give/Donate</a></li>
+                        <li class="mx-5 hover:text-[#D4AF37]"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <section class="mt-10">
+        <div class="max-w-xl flex justify-center shadow-xl mx-auto justify-center">
+          <span class="max-w-sm items-center text-mono  font-bold text-center text-xl">Welcome To Reigner's Nation where Men are Equipped To live victoriously here on earth</span>
+        </div>
+  </section>
+   <section>
+    <div class="my-10 flex items-center justify-center">
+        <div class="grid grid-cols-2">
+            <div class=" text-center justify-end">
+                <h3 class="font-bold text-xl text-center">Our Vision</h3>
+                <p>We have a calling and vision to spread to all men the victorious life in christ enabling them to reign in life, this means that we have the vision to .... </p>
+                <a href="#" class="text-center bg-gradient-to-br from-[#D4AF37] to-[#7D3C3C] rounded-md hover:bg-blue-500">Our Philosophy</a>
+            </div>
+            <div>
+                <img src="media/congegation.jpg" alt="" class="rounded-[30px] md:w-90 h-90">
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section>
+    <div class=" grid justify-center items-center">
+        <div class="text-center">
+            <h3 class="font-extrabold text-3xl text-center">Services Times</h3>
+            <p class="text-[#D4AF37]">Join us in worship</p>
+        </div>
+    </div>
+   </section>
+   
+   <section class="">
+    <div class="my-6">
+        <div class="flex justify-center">
+        <div class="w-full max-w-lg relative overflow-hidden rounded-xl shadow-lg">
+            <div class="flex transition-transform duration-500 ease-in-out" id="slides">
+                <img src="media/church/1.jpg" alt="" class="flex-shrink-0">
+                <img src="media/church/2.jpg" alt="" class="flex-shrink-0">
+                <img src="media/church/3.jpg" alt="" class="flex-shrink-0">
+                <img src="media/church/4.jpg" alt="" class="flex-shrink-0">
+                <img src="media/church/5.jpg" alt="" class="flex-shrink-0">
+            </div>
+            <button id="prev" onclick="prev()" class="absolute top-1/2 rounded-full bg-white p-2 left-2 ">  ◀</button>
+            <button id="Next" onclick="next()" class="absolute top-1/2 rounded-full bg-white p-2 right-2 ">  ▶</button>
+        </div>
+        </div>
+        </div>
+   </section>
+
+   <section class="py-16 px-6 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Ministries</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+        <img src="media/church/1.jpg" alt="">
+        <h3 class="text-xl font-semibold mb-2">Youth & Teens</h3>
+        <p class="text-sm">Equipping the next generation to lead in purpose and purity.</p>
+      </div>
+      <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+        <img src="media/church/2.jpg" alt="">
+        <h3 class="text-xl font-semibold mb-2">Worship Team</h3>
+        <p class="text-sm">Leading hearts into God’s presence through powerful worship.</p>
+      </div>
+      <div class="glass p-6 rounded-xl shadow-xl transition hover:scale-105 bg-white">
+        <img src="media/church/3.jpg" alt="">
+        <h3 class="text-xl font-semibold mb-2">Evangelism Squad</h3>
+        <p class="text-sm">Carrying the gospel into streets, souls, and digital spaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+        <h2 class="text-center font-bold my-2">Sermons</h2>
+            <p class="text-center italic"> "mattew 3:3 Deliverance can be preached"
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur maiores facilis animi?
+        </p>
+            <h3 class="my-5 text-center font-extrabold text-2xl text-gray-900">Listen to Our Messages Across diferent Platforms</h3>
+       <div class="relative max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg">
+            <div id="slider" class="my-5 flex transition-transform duration-700 ease-in-out">
+            <img src="media/youtube.png" class="w-full h-[50%] flex-shrink-0">
+            <img src="media/social3.jpeg" class="w-full h-[50%] flex-shrink-0">
+            <img src="media/youtube2.png" class="w-full h-[50%] flex-shrink-0">
+            </div>
+        </div>
+    </div>
+
+  </section>
+  <section class="py-16  text-white text-center bg-[#0A0F2C]">
+    <h2 class="text-3xl font-bold mb-6">Connect With Us</h2>
+    <p class="mb-2">📍 Obe Agbani, Enugu state</p>
+    <p class="mb-2">📧 reignerschurch@gmail.com</p>
+    <p class="mb-6">📞 +234 810 374 5546</p>
+    <a href="mailto:reignerschurch@gmail.com" class="inline-block px-6 py-3 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-300 transition">Send Email</a>
+  </section>
+   <script>
+        const slides = document.getElementById("slides");
+        const slider = document.getElementById("slider");
+        const images = slides.querySelectorAll("img");
+        const totalSlides = slider.children.length;
+        let index = 0;
+         function next(){
+           index = (index + 1) % images.length
+           slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+        function prev(){
+            index = (index - 1 + images.length) % images.length
+             slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+        function updateSlide() {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+         function nextSlide() {
+            index = (index + 1) % totalSlides;
+            updateSlide();
+        }
+        function prevSlide() {
+            index = (index - 1 + totalSlides) % totalSlides;
+            updateSlide();
+        }
+
+       
+
+        setInterval(nextSlide, 4000);
+   </script>
+</body>

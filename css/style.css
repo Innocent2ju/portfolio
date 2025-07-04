@@ -1,6 +1,13 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
 
 #dark{
     overflow:scroll;
@@ -33,4 +40,7 @@ html{
     100%{
         color: black;
     }
+}
+section{
+    margin: 50px 5px;
 }
